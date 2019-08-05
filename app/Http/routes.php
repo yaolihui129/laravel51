@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('Test/sql', 'Test\SqlController' );
+Route::resource('Test/user', 'Test\UserController');
+Route::resource('Test/api', 'Test\ApiController');
